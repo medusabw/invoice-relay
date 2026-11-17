@@ -1,0 +1,22 @@
+{
+  "name": "invoice-relay",
+  "version": "0.4.2",
+  "private": true,
+  "description": "Small invoicing backend: Stripe Checkout, dispute handling, and AI-written invoice summaries.",
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p .",
+    "start": "node dist/src/server.js",
+    "test": "node --test dist/test"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.137.0",
+    "express": "^4.21.2",
+    "stripe": "^22.6.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^22.10.0",
+    "typescript": "^5.7.2"
+  }
+}
